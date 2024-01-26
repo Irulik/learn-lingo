@@ -1,0 +1,188 @@
+.advan {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.advan-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.advan-potential {
+    height: 530px;
+    width: 720px;
+    background-color: #F8F8F8;
+    margin-top: 30px;
+    margin-left: 64px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    border-radius: 30px;
+}
+
+.advan-content {
+    max-width: 548px;
+    margin-top: 98px;
+    margin-right: 108px;
+    margin-left: 64px;
+    margin-bottom: 98px;
+}
+
+.advan-title {
+    width: 548px;
+    margin-bottom: 32px;
+    color: var(--color-black);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+}
+
+em {
+    color: var(--color-black);
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+    background-color: var(--color-light-yellow);
+}
+
+.advan-text {
+    width: 471px;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: -0.32px;
+
+}
+
+.advan-button {
+    width: 267px;
+    height: 60px;
+    background-color: var(--color-yellow);
+    display: inline-flex;
+    padding: 16px 88px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 64px;
+}
+
+.advan-center {
+    color: var(--color-black);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+/* Block tutor */
+.advan_pictures {
+    height: 530px;
+    width: 568px;
+    border-radius: 30px;
+    margin-top: 25px;
+    background-color: var(--color-light-yellow);
+    margin-right: 64px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.advan__pictures-wrapper {
+    align-items: center;
+    padding-left: 114px;
+    padding-right: 115px;
+    padding-top: 80px;
+
+}
+
+.advan_image-container,
+.advan_tutor {
+    position: relative;
+    background-color: transparent;
+}
+
+/* .advan_tutor {
+    background-color: var(--color-light-yellow);  
+} */
+
+.advan-tutor,
+.advan_comp,
+.advan_mac {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.advan_comp {
+    top: -65px;
+    z-index: 2;
+    width: 359.72px;
+    height: 247.251px;
+    flex-shrink: 0;
+}
+
+.advan_mac {
+    z-index: 3;
+    top: -250px;
+    width: 46px;
+    height: 56px;
+}
+
+
+
+
+
+
+/* Section statistics */
+.statistics {
+    width: 1312px;
+    margin: 0 auto;
+    padding: 40px 122px;
+    border: 2px dashed var(--color-light-yellow);
+    border-radius: 30px;
+}
+
+.statistics .container {
+    width: 1067px;
+}
+
+
+.statistics_wrapper {
+    /* display: flex;   
+    align-items: center;
+    column-gap: 100px;  */
+    justify-content: center;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.statistics_tutors {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+.number_chifr {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.56px;
+}
+
+.number {
+    width: 74px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
