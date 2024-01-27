@@ -20,8 +20,6 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    /* margin-left: 128px; */
-    margin-right: 390px;
 
 }
 
@@ -39,7 +37,6 @@
 
 .header-nav {
     color: var(--color-blank);
-    margin-right: 268px;
 }
 
 .header-nav ul {
