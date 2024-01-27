@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/learn-lingo/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn lingo</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" crossorigin src="/learn-lingo/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/learn-lingo/assets/header-347a95d2.js">
+    <link rel="modulepreload" crossorigin href="/learn-lingo/assets/vendor-9b06061c.js">
+    <link rel="stylesheet" href="/learn-lingo/assets/header-a5f62e23.css">
+    <link rel="stylesheet" href="/learn-lingo/assets/index-d5f29112.css">
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header-row">
+      <div class="header-logo">
+        <a href="/">
+          <img
+            src="../assets/img/ukraine.svg"
+            alt="LearnLingo logo"
+            height="28"
+            width="28"
+          />
+        </a>
+        <a href="./index.html" class="text-center">LearnLingo</a>
+      </div>
+
+      <div class="header-nav">
+        <nav>
+          <ul class="header-nav_list navigation_lit">
+            <li class="header-nav_item navigation_item">
+              <a class="header-nav_link navigation_link" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="header-nav_item navigation_item">
+              <a class="header-nav_link navigation_link" href="./teachers.html"
+                >Teachers</a
+              >
+            </li>
+            <li class="header-nav_item navigation_item">
+              <a class="header-nav_link navigation_link" href="./favorites.html"
+                >Favorites</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-login">
+        <nav class="header-login-user">
+          <a href="/LogIn">
+            <img
+              src="../assets/img/log-in-01-f.svg"
+              alt="SignIn"
+              width="20"
+              height="20"
+            />
+          </a>
+          <a href="#" id="logInButton">Log in</a>
+        </nav>
+        <div class="header-login-button">
+          <button class="button" id="RegistartionButton">Registration</button>
+        </div>
+        <!-- <a href="#" class="button">Registration</a> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- POPUP REGISTRATION -->
+<div class="popup-container js-popup-container">
+  <div class="popup-box">
+    <button class="modal-close-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="none"
+      >
+        <path
+          stroke="#121417"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+          d="M24 8 8 24M8 8l16 16"
+        />
+      </svg>
+    </button>
+
+    <h2 class="popup-title">Registration</h2>
+    <p class="popup-text">
+      Thank you for your interest in our platform! In order to register, we need
+      some information. Please provide us with the following information
+    </p>
+
+    <form class="popup-reg-form">
+      <div class="popup-reg-group">
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Full Name"
+          name="name"
+          required
+          pattern="[a-zA-Zа-яА-Я]+"
+          maxlength="20"
+        />
+      </div>
+
+      <div class="popup-reg-group">
+        <input
+          type="email"
+          id="email"
+          class="form-input"
+          placeholder="Email"
+          name="email"
+          required
+        />
+      </div>
+
+      <div class="popup-reg-group">
+        <input
+          type="tel"
+          class="form-input"
+          placeholder="Password"
+          name="password"
+        />
+      </div>
+      <button type="submit" class="popup-reg-btn">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<!-- /POPUP REGISTRATION -->
+
+    <main>
+      <section class="advan">
+        <div class="advan-inner">
+          <div class="advan-potential">
+            <div class="advan-content">
+              <h1 class="advan-title">
+                Unlock your potential with the best <em>language</em> tutors
+              </h1>
+              <p class="advan-text">
+                Embark on an Exciting Language Journey with Expert Language
+                Tutors: Elevate your language proficiency to new heights by
+                connecting with highly qualified and experienced tutors.
+              </p>
+              <div class="advan-button">
+                <!-- <button type="button">Get started</button> -->
+                <a href="./teachers.html" class="advan-center">Get started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="advan_pictures">
+            <div class="advan__pictures-wrapper">
+              <div class="advan_image-container">
+                <img
+                  class="advan_tutor"
+                  src="/learn-lingo/assets/Tutor-3d577a44.jpg"
+                  alt="photo of tutor"
+                  width="339"
+                  height="339"
+                />
+                <img
+                  class="advan_comp"
+                  src="/learn-lingo/assets/Union-e6ec558b.png"
+                  alt="photo of comp"
+                  width="360"
+                  height="248"
+                />
+                <img
+                  class="advan_mac"
+                  src="/learn-lingo/assets/-mac-bf0611ea.svg"
+                  alt="icon-mac"
+                  width="46"
+                  height="56"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="statistics">
+        <div class="container">
+          <div class="statistics_wrapper">
+            <div class="statistics_tutors">
+              <h3 class="number_chifr">32,000 +</h3>
+              <p class="number">Experienced tutors</p>
+            </div>
+
+            <div class="statistics_tutors">
+              <h3 class="number_chifr">300,000 +</h3>
+              <p class="number">5-star tutor reviews</p>
+            </div>
+
+            <div class="statistics_tutors">
+              <h3 class="number_chifr">120 +</h3>
+              <p class="number">Subjects taught</p>
+            </div>
+
+            <div class="statistics_tutors">
+              <h3 class="number_chifr">200 +</h3>
+              <p class="number">Tutor nationalities</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Loads the specified .html file -->
+
+    
+    
+  </body>
+</html>
