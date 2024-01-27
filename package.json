@@ -12,7 +12,7 @@
     "glob": "^8.1.0",
     "vite": "^4.0.5"
   },
-  "author": "Iryna Tolkachova",
+  "author": "I.Tolkachova",
   "license": "ISC",
   "dependencies": {
     "firebase": "^10.7.2",
