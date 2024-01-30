@@ -1,20 +1,17 @@
 /* READ MORE */
-.tutor-section {
+.tutor-section {}
 
-}
 .tutor-card {
-    height: 328px; 
-  
-}
+    height: 328px;
 
+}
 
 .tutor-readmore.tutor-readmore--show {
-    max-height: 748px; 
+    max-height: 748px;
 }
 
-
 .tutor-read {
-    margin-top: 16px;
+    /* margin-top: 16px; */
     display: flex;
 }
 
@@ -26,8 +23,9 @@
 
 .tutor-readmore.tutor-readmore--show {
     max-height: 748px;
-  
+
 }
+
 .is-hidden {
     display: none;
 }
@@ -44,7 +42,7 @@
     align-items: flex-start;
     gap: 32px;
     margin-top: 32px;
-  
+
 }
 
 .tutors-box-resp {

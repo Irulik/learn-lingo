@@ -143,12 +143,20 @@ body {
     background: #FFF;
 }
 
-.tutor-avatar {
+/* .tutor-avatar {
     width: 96px;
     height: 96px;
     flex-shrink: 0;
     border-radius: 100px;
     background: url(../img/pictures/Jane.jpg), lightgray 50% / cover no-repeat;
+} */
+
+.tutor-avatar {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-size: cover;
 }
 
 .tutor-list {
@@ -257,6 +265,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 16px;
     gap: 8px;
 }
 
