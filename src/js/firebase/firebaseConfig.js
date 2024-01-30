@@ -1,10 +1,9 @@
 export const firebaseConfig = {
-  apiKey: 'AIzaSyCPjk1E34nPDy4P83msEWktdV1uhHuk-Vg',
-  authDomain: 'to-do-list-57e5e.firebaseapp.com',
-  databaseURL:
-    'https://to-do-list-57e5e-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'to-do-list-57e5e',
-  storageBucket: 'to-do-list-57e5e.appspot.com',
-  messagingSenderId: '638525864468',
-  appId: '1:638525864468:web:b14e6928d8a479105c4501',
+  apiKey: "AIzaSyBnbF93L_e-YM1l0IfpVG6xe1yQypttTqs",
+  authDomain: "base-lingo.firebaseapp.com",
+  datafaseURL: 'https://base-lingo-default-rtdb.europe-west1.firebasedatabase.app',
+  projectId: "base-lingo",
+  storageBucket: "base-lingo.appspot.com",
+  messagingSenderId: "501362930586",
+  appId: "1:501362930586:web:387ce46ec4671a8d3f4023"
 };
