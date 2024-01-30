@@ -3,8 +3,9 @@ import { addData, getData } from './firebase/db.js';
 
 import '../assets/css/home.css';
 import '../assets/css/popup_registation.css';
+// import '../assets/css/popup_login.css';
 
-const btnRegEl = document.querySelector('#RegistartionButton');
+const btnRegEl = document.querySelector('#registrationButton');
 const popupRegEl = document.querySelector('.js-popup-container');
 const modalCloseBtnEl = document.querySelector('.modal-close-btn');
 const formEl = document.querySelector('.popup-reg-form');

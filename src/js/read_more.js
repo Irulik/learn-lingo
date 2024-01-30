@@ -1,5 +1,3 @@
-console.log('Hello world!');
-
 document.querySelectorAll('.read-more-btn').forEach(button => {
     button.addEventListener('click', () => {
         const dataIndex = button.parentElement.dataset.index; 
@@ -19,5 +17,7 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
         if (bookLessonButton) {
             bookLessonButton.classList.toggle('is-hidden');
         }
+
+        parentContainer.classList.toggle('tutor-card--expanded');
     });
 });

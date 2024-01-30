@@ -1,3 +1,5 @@
+import '../assets/css/modal-book-lesson.css';
+
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.querySelector('.modal');
     const backdrop = document.querySelector('.backdrop');
