@@ -3,27 +3,15 @@
 
 .tutor-card {
     height: 328px;
-
-}
-
-.tutor-card {
     position: relative;
 }
+
 
 .tutor-readmore {
     max-height: 328px;
     overflow: hidden;
     transition: max-height 0.3s ease;
 }
-
-.tutor-card--expanded {
-    height: 748px;
-}
-
-.tutor-readmore.tutor-readmore--show {
-    max-height: 748px;
-}
-
 
 
 .tutor-read {
@@ -34,12 +22,11 @@
 .tutor-readmore {
     max-height: 0;
     overflow: hidden;
-    /* transition: max-height 0.3s ease-in-out; */
+    transition: max-height 0.3s ease-in-out;
 }
 
 .tutor-readmore.tutor-readmore--show {
     max-height: 748px;
-
 }
 
 .is-hidden {

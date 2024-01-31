@@ -135,7 +135,7 @@ body {
 }
 
 .tutors-box {
-    display: inline-block;    
+    display: inline-block;
     padding: 12px;
     flex-shrink: 0;
     border-radius: 100px;
@@ -230,11 +230,11 @@ body {
 }
 
 .tutor-det-lesson {
-    
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-      
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
 }
 .tutor-det {
     width: 145px;

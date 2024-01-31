@@ -1,23 +1,19 @@
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const dataIndex = button.parentElement.dataset.index; 
-        const cardId = `card${dataIndex}`;
-        const parentContainer = document.querySelector(`[data-index="${dataIndex}"]`);
-        const additionalInfo = parentContainer.querySelector('.tutor-readmore');
-        const bookLessonButton = parentContainer.querySelector('.book-button');
+import '../assets/css/read_more.css';
+
+document.querySelectorAll('.tutor-read').forEach(parentContainer => {
+    parentContainer.addEventListener('click', event => {
+        const current = event.target;
+        const isReadMoreBtn = current.classList.contains('read-more-btn');
+        if (!isReadMoreBtn) return;
+
+        const currentSection = current.closest('.tutor-card');
+        const index = currentSection.dataset.index;
+
+        const additionalInfo = currentSection.querySelector('.tutor-readmore');
 
         if (additionalInfo) {
-            additionalInfo.classList.toggle('tutor-readmore--show');
+            current.classList.add('is-hidden');
+            additionalInfo.classList.add('tutor-readmore--show');
         }
-
-        if (button.classList.contains('read-more-btn')) {
-            button.classList.toggle('is-hidden');
-        }
-
-        if (bookLessonButton) {
-            bookLessonButton.classList.toggle('is-hidden');
-        }
-
-        parentContainer.classList.toggle('tutor-card--expanded');
     });
 });
