@@ -45,3 +45,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+//очищаю форму 
+const bookButton = document.querySelector(".form-btn");
+const bookForm = document.getElementById("js-bookForm");
+
+bookButton.addEventListener("click", function (e) {
+    handleFormSubmit(e, bookForm);
+});
+
+function handleFormSubmit(e, form) {
+    e.preventDefault();
+
+    const formData = {
+        name: form.elements.fullname.value,
+        email: form.elements.email.value,
+        phone: form.elements.phone.value
+    };
+
+    if (!formData.email.trim() || !formData.phone.trim()) {
+        return alert("Please fill in all the fields!");
+    } else {
+        console.log(formData);
+        form.reset();
+    }
+}
