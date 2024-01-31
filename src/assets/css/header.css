@@ -19,8 +19,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+}
 
+.header-logo-icon {
+    height: 28px;
+    width: 28px;
 }
 
 .text-center {
@@ -28,7 +32,6 @@
     font-size: 20px;
     font-weight: 500;
     letter-spacing: -0.4px;
-    ;
 }
 
 .header-logo a:hover {
@@ -58,12 +61,18 @@
 }
 
 .header-login-user {
-    margin-right: 8px;
+    margin-right: 16px;    
 }
+
 
 /* .header-login > * + * {
     margin-left: 8px;
 } */
+
+.header-login-icon {
+    height: 20px;
+    width: 20px;
+}
 
 .header-login {
     font-size: 16px;
