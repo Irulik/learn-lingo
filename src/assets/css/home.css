@@ -1,37 +1,36 @@
 .advan {
     max-width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 .advan-inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .advan-potential {
-    height: 530px;
-    width: 720px;
+    height: auto;
+    width: 100%;
+    max-width: 720px;
     background-color: #F8F8F8;
-    margin-top: 30px;
-    margin-left: 64px;
-    margin-right: 24px;
-    margin-bottom: 24px;
+    margin: 30px 0 24px;
     border-radius: 30px;
+    padding: 30px;
+    
 }
 
 .advan-content {
-    max-width: 548px;
-    margin-top: 98px;
-    margin-right: 108px;
-    margin-left: 64px;
-    margin-bottom: 98px;
+    max-width: 100%;
 }
 
 .advan-title {
-    width: 548px;
     margin-bottom: 32px;
     color: var(--color-black);
     font-size: 48px;
@@ -52,79 +51,63 @@ em {
 }
 
 .advan-text {
-    width: 471px;
     font-style: normal;
     line-height: 22px;
     letter-spacing: -0.32px;
-
 }
 
 .advan-button {
     width: 267px;
+    max-width: 100%;
     height: 60px;
     background-color: var(--color-yellow);
-    display: inline-flex;
-    padding: 16px 88px;
-    justify-content: center;
-    align-items: center;
+    padding: 16px;
     border-radius: 12px;
-    margin-top: 64px;
+    margin-top: 24px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .advan-center {
     color: var(--color-black);
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 28px;
 }
 
-/* Block tutor */
 .advan_pictures {
-    height: 530px;
-    width: 568px;
+    height: auto;
+    width: 100%;
+    max-width: 568px;
     border-radius: 30px;
-    margin-top: 25px;
+    margin: 25px 0 24px;
     background-color: var(--color-light-yellow);
-    margin-right: 64px;
-    margin-bottom: 24px;
-    position: relative;
+    text-align: center;
 }
 
 .advan__pictures-wrapper {
+    display: flex;
     align-items: center;
-    padding-left: 114px;
-    padding-right: 115px;
-    padding-top: 80px;
-
+    justify-content: center;
 }
 
-.advan_image-container,
-.advan_tutor {
-    position: relative;
-    background-color: transparent;
+.advan_image-container {
+    text-align: center;
 }
 
-/* .advan_tutor {
-    background-color: var(--color-light-yellow);  
-} */
-
-.advan-tutor,
+.advan_tutor,
 .advan_comp,
 .advan_mac {
     position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
 }
 
 .advan_comp {
     top: -65px;
     z-index: 2;
-    width: 359.72px;
-    height: 247.251px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 359.72px;
+    height: auto;
+    position: relative;
 }
 
 .advan_mac {
@@ -132,44 +115,36 @@ em {
     top: -250px;
     width: 46px;
     height: 56px;
+    position: relative;
 }
 
-
-
-
-
-
-/* Section statistics */
+/* Стилі для секції statistics */
 .statistics {
-    width: 1312px;
-    margin: 0 auto;
-    padding: 40px 122px;
+    
+    max-width: 1440px;
+    /* width: 100%;  */
+    margin: 40px auto; 
+    padding: 40px 20px;
     border: 2px dashed var(--color-light-yellow);
     border-radius: 30px;
+   
 }
 
 .statistics .container {
-    width: 1067px;
+    max-width: 1067px;
+    width: 100%;
 }
 
-
 .statistics_wrapper {
-    /* display: flex;   
-    align-items: center;
-    column-gap: 100px;  */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
     justify-content: center;
-    display: inline-flex;
     align-items: flex-start;
-    gap: 100px;
 }
 
 .statistics_tutors {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-
+    text-align: center;
 }
 
 .number_chifr {
@@ -180,9 +155,137 @@ em {
 }
 
 .number {
-    width: 74px;
+    margin-top: 8px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
+}
+
+/* Медіа-запити */
+@media screen and (max-width: 767px) {
+    .advan-inner,
+    .statistics_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .advan-potential,
+    .advan_pictures,
+    .statistics {
+        max-width: 100%;
+    }
+
+    .advan-potential {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .advan-content,
+    .statistics_wrapper {
+        margin: 0 20px;
+    }
+
+    .advan-title,
+    em {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .advan-text {
+        width: auto;
+    }
+
+   .advan-button {
+       width: 100%;
+       max-width: 100%;
+   }
+
+    .statistics_tutors {
+        max-width: 100%;
+    }
+    
+
+    .advan_comp,
+    .advan_comp {
+        top: 0;
+    }
+
+    .advan_mac {
+        top: -150px;
+    }
+
+    .statistics_tutors {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .number_chifr,
+    .number {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .advan-inner,
+    .statistics_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .advan-potential,
+    .advan_pictures,
+    .statistics {
+        max-width: 100%;
+    }
+
+    .advan-potential {
+        margin: 20px 0;
+    }
+
+    .advan-button,
+    .statistics_tutors {
+        max-width: 100%;
+    }
+
+    .advan_comp {
+        top: -30px;
+    }
+
+    .advan_mac {
+        top: -120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .advan-inner,
+    .statistics_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .advan-potential,
+    .advan_pictures,
+    .statistics {
+        max-width: 100%;
+    }
+
+    .advan-potential {
+        margin: 40px 0;
+    }
+
+    .advan-button,
+    .statistics_tutors {
+        max-width: 100%;
+    }
+
+    .advan_comp {
+        top: -40px;
+    }
+
+    .advan_mac {
+        top: -160px;
+    }
+
+    .statistics_wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

@@ -3,8 +3,15 @@
     padding-bottom: 20px;
 }
 
+.container {
+    width: 100%;
+    max-width: 1184px;
+    margin: 0 auto;
+}
+
 .header-row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -17,9 +24,13 @@
 
 .header-logo {
     display: flex;
-    flex-direction: row;
+
     align-items: center;
     gap: 8px;
+}
+
+.header-logo a {
+    text-decoration: none;
 }
 
 .header-logo-icon {
@@ -44,13 +55,10 @@
 
 .header-nav ul {
     display: flex;
-    gap: 28px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* якщо додати сторінку favorites і прибрати марджін у останнього */
-/* .header-nav li + li {
-    margin-left: 28px;
-} */
 
 .header-nav a {
     transition: color 0.2s ease;
@@ -61,7 +69,7 @@
 }
 
 .header-login-user {
-    margin-right: 16px;    
+    margin-right: 16px;
 }
 
 
@@ -79,7 +87,21 @@
     font-weight: 700;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+
+
+}
+
+.header-login-button {
+    margin-left: auto;
+    /* Розташовує кнопку вправо */
+}
+
+.button,
+a.button {
+    height: 48px;
+    padding-left: 39px;
+    padding-right: 39px;
+
 }
 
 .header-login a {
@@ -104,4 +126,21 @@ a.button {
     padding-top: 14px;
     padding-bottom: 14px;
     transition: opacity 0.2s ease;
+}
+
+@media screen and (max-width: 767px) {
+    .header-nav ul {
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .header-logo {
+        flex-basis: 50%;
+    }
+
+    .header-nav {
+        flex-basis: 50%;
+        margin-top: 0;
+    }
 }
