@@ -11,42 +11,42 @@ const modalCloseBtnEl = document.querySelector('.modal-close-btn');
 const formEl = document.querySelector('.popup-reg-form');
 
 btnRegEl.addEventListener('click', () => {
-  popupRegEl.classList.add('show');
-  document.body.classList.add('no-scroll');
+	popupRegEl.classList.add('show');
+	document.body.classList.add('no-scroll');
 });
 
 popupRegEl.addEventListener('click', e => {
-  if (!e.target.classList.contains('js-popup-container')) return;
-  hideModal();
+	if (!e.target.classList.contains('js-popup-container')) return;
+	hideModal();
 });
 
 modalCloseBtnEl.addEventListener('click', e => {
-  hideModal();
+	hideModal();
 });
 
 function hideModal() {
-  popupRegEl.classList.remove('show');
-  document.body.classList.remove('no-scroll');
+	popupRegEl.classList.remove('show');
+	document.body.classList.remove('no-scroll');
 }
 
 formEl.addEventListener('submit', e => {
-  try {
-    e.preventDefault();
-    const { name, email, password } = Object.fromEntries(
-      new FormData(e.target)
-    );
-    registrationUser(email, password);
-    addData({ name, email, password }, 222222);
-    hideModal();
-  } catch ({ message }) {
-    console.log(message);
-  }
+	try {
+		e.preventDefault();
+		const { name, email, password } = Object.fromEntries(
+			new FormData(e.target)
+		);
+		registrationUser(email, password);
+		addData({ name, email, password }, 222222);
+		hideModal();
+	} catch ({ message }) {
+		console.log(message);
+	}
 });
 
 getData()
-  .then(r => {
-    console.log(Object.values(r));
-  })
-  .catch(e => {
-    console.log(e);
-  });
+	.then(r => {
+		console.log(Object.values(r));
+	})
+	.catch(e => {
+		console.log(e);
+	});

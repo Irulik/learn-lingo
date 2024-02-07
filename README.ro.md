@@ -37,7 +37,7 @@ fă commit-uri și încarcă-le pe GitHub.
 ## Pregătirea pentru lucru
 
 1. Asigură-te că ai instalat pe calculator versiunea LTS a Node.js.
-   [Descarc-o și instaleaz-o](https://nodejs.org/en/) dacă este necesar.
+	 [Descarc-o și instaleaz-o](https://nodejs.org/en/) dacă este necesar.
 2. Instalează dependențele de bază ale proiectului în terminal folosind comanda `npm install`.
 3. Lansează modul de dezvoltare prin executarea în terminal a comenzii `npm run dev`.
 4. Accesează în browser [http://localhost:5173](http://localhost:5173).

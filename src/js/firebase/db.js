@@ -7,15 +7,15 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase();
 
 export const addData = (data, id) => {
-  set(ref(db, 'items/' + id), data);
+	set(ref(db, 'items/' + id), data);
 };
 
 export const getData = data => {
-  return get(ref(db, 'items')).then(snapshot => {
-    if (snapshot.exists()) {
-      return snapshot.val();
-    } else {
-      throw new Error('No data available');
-    }
-  });
+	return get(ref(db, 'items')).then(snapshot => {
+		if (snapshot.exists()) {
+			return snapshot.val();
+		} else {
+			throw new Error('No data available');
+		}
+	});
 };
