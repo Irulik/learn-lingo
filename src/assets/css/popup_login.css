@@ -78,7 +78,10 @@
 .popup-reg-form {
 		display: flex;
 		flex-direction: column;
-		gap: 18px;
+}
+
+.popup-reg-group {
+	margin-bottom: 18px;
 }
 
 .form-input {
