@@ -1,11 +1,11 @@
 import { registrationUser } from './firebase/auth.js';
 import { addData, getData } from './firebase/db.js';
+import { showLoginPopup, hideLoginPopup } from './login-popup.js';
 
 import '../assets/css/home.css';
 import '../assets/css/popup_registation.css';
 import '../assets/css/popup_login.css';
 
-import { showLoginPopup, hideLoginPopup } from './login-popup.js';
 
 const btnRegEl = document.querySelector('#registrationButton');
 const popupRegEl = document.querySelector('.js-popup-container');
@@ -56,3 +56,6 @@ getData()
 		console.log(e);
 	});
 	
+// show favEl in case logged in on page opening
+import { favCreator } from './favorites.js';
+favCreator(); 

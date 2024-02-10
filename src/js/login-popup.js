@@ -1,3 +1,6 @@
+import { logInUser } from './firebase/auth.js';
+import { favCreator } from './favorites.js';
+
 function showLoginPopup() {
     const logInLinkEl = document.getElementById('logInLink');
     const logInButtonEl = document.getElementById('logInButton');
@@ -24,15 +27,17 @@ function hideLoginPopup() {
     document.body.classList.remove('no-scroll');
 }
 
+// the log in
 const loginFormEl = document.querySelector('.popup-login-form');
 loginFormEl.addEventListener('submit', e => {
     try {
         e.preventDefault();
         const { email, password } = Object.fromEntries(new FormData(e.target));
-        // loginFunction(email, password);
-
+        logInUser(email, password);
+        console.log("success inside");
         // Після авторизації можна приховати попап:
         hideLoginPopup();
+        favCreator();
     } catch ({ message }) {
         console.log(message);
     }

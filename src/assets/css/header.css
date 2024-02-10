@@ -71,6 +71,12 @@
 	margin-left: auto;
 	/* Розташовує кнопку вправо */
 }
+.favorites{
+	display: none;
+}
+.favorites.show{
+	display: block;
+}
 .button,
 a.button {
 	height: 48px;
