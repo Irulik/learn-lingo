@@ -3,12 +3,17 @@ import { addData, getData } from './firebase/db.js';
 
 import '../assets/css/home.css';
 import '../assets/css/popup_registation.css';
-// import '../assets/css/popup_login.css';
+import '../assets/css/popup_login.css';
+
+import { showLoginPopup, hideLoginPopup } from './login-popup.js';
 
 const btnRegEl = document.querySelector('#registrationButton');
 const popupRegEl = document.querySelector('.js-popup-container');
 const modalCloseBtnEl = document.querySelector('.modal-close-btn');
 const formEl = document.querySelector('.popup-reg-form');
+
+const logInButtonEl = document.getElementById('logInButton');
+logInButtonEl.addEventListener('click', showLoginPopup);
 
 btnRegEl.addEventListener('click', () => {
 	popupRegEl.classList.add('show');
@@ -36,7 +41,7 @@ formEl.addEventListener('submit', e => {
 			new FormData(e.target)
 		);
 		registrationUser(email, password);
-		addData({ name, email, password }, 222222);
+		addData({ name, email, password });
 		hideModal();
 	} catch ({ message }) {
 		console.log(message);
@@ -50,3 +55,4 @@ getData()
 	.catch(e => {
 		console.log(e);
 	});
+	

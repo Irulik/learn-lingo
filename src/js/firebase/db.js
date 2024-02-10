@@ -6,8 +6,8 @@ const app = initializeApp(firebaseConfig);
 
 const db = getDatabase();
 
-export const addData = (data, id) => {
-	set(ref(db, 'items/' + id), data);
+export const addData = (data) => {
+	set(ref(db, 'items/'), data);
 };
 
 export const getData = data => {
